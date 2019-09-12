@@ -32,7 +32,8 @@ def client_login_send():
     '''
     myuname = input("请输入用户名：")
     mypasswd = input("请输入密码：")
-    req = '{"op": 1, "args":{"uname": "myuname", "passwd": "mypasswd"}}'
+    req = {"op": 1, "args":{"uname": myuname, "passwd": mypasswd}}
+    req = json.dumps(req)
     data_top="{:<15}".format(len(req)).encode()
     sock.send(data_top)
     sock.send(req.encode())
@@ -118,7 +119,8 @@ def client_reg_send():
     mypasswd = input("请输入密码：")
     myphone = input("请输入手机号：")
     myemail = input("请输入邮箱：")
-    req = '{"op": 2, "args": {"uname": "myuname", "passwd": "mypasswd", "phone": "myphone", "email": "myemail"}}'
+    req = {"op": 2, "args": {"uname": myuname, "passwd": mypasswd, "phone": myphone, "email": myemail}}
+    req = json.dumps(req)
     data_top = "{:<15}".format(len(req)).encode()
     sock.send(data_top)
     sock.send(req.encode())
@@ -152,7 +154,8 @@ def client_uname_send():
     函数功能：校验用户名是否存在
     '''
     myuname = input("请输入用户名:")
-    req = '{"op": 3, "args": {"uname": "myuname"}}'
+    req = {"op": 3, "args": {"uname": myuname}}
+    req = json.dumps(req)
     data_top = "{:<15}".format(len(req)).encode()
     sock.send(data_top)
     sock.send(req.encode())
