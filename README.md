@@ -26,7 +26,7 @@
 
    ​	{
 
-   ​	"uname": "dengjun",
+   ​	"uname": "azhe",
 
    ​	"passwd": "A24314FBECDFDASFD4143241", # 真实密码的MD5值，使用大写表示
 
@@ -54,7 +54,7 @@
 
    ​	{
 
-   ​	"uname": "dengjun",
+   ​	"uname": "azhe",
 
    ​	"passwd": "A24314FBECDFDASFD4143241", # 真实密码的MD5值，使用大写表示
 
@@ -86,7 +86,7 @@
 
    ​	{
 
-   ​	"uname": "dengjun"
+   ​	"uname": "azhe"
 
    ​	}
 
