@@ -60,7 +60,7 @@
 
    ​	"phone": "18574315251", # 手机号
 
-   ​	"emai": "[dj@itmojun.com](mailto:dj@itmojun.com)" # 邮箱
+   ​	"emai": "az@azhe.net.cn" # 邮箱
 
    ​	}
 
